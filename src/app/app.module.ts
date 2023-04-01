@@ -5,9 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { appConfigFactory } from './shared/services/app-config/app-config-factory';
 import { AppConfigService } from './shared/services/app-config/app-config.service';
+import { AppHeaderComponent } from './app-header/app-header.component';
+import { AppMenuComponent } from './app-menu/app-menu.component';
 
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, AppHeaderComponent, AppMenuComponent],
     imports: [BrowserModule, AppRoutingModule, HttpClientModule],
     providers: [
         {

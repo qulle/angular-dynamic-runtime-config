@@ -1,1 +1,9 @@
-Angular Dynamic Runtime Config
+<div class="app-wrapper">
+    <app-header>
+        <app-menu *ngIf="isMenuEnabled"></app-menu>
+    </app-header>
+    <div class="app-content">
+        <p>You can make changes in the app-config.json file located in /assets directory.</p>
+        <p>When the application is reloaded the new configuration will take effect.</p>
+    </div>
+</div>
