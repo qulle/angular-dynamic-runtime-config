@@ -5,18 +5,13 @@ export interface AppConfig {
         date: string;
         author: string;
     };
-    localization: {
+    locale: {
         default: string;
-        options: [
-            {
-                name: string;
-                key: string;
-            },
-            {
-                name: string;
-                key: string;
-            }
-        ];
+        selected: string;
+        supported: Array<{
+            key: string;
+            value: string;
+        }>;
     };
     components: {
         appMenu: {

@@ -7,16 +7,21 @@ export const DefaultAppConfig: AppConfig = {
         date: '2023-04-01 12:00:00',
         author: 'Qulle',
     },
-    localization: {
-        default: 'en-us',
-        options: [
+    locale: {
+        default: 'sv-se',
+        selected: 'en-us',
+        supported: [
             {
-                name: 'English',
-                key: 'en-us',
+                key: 'English',
+                value: 'en-us',
             },
             {
-                name: 'Swedish',
-                key: 'sv-se',
+                key: 'Swedish',
+                value: 'sv-se',
+            },
+            {
+                key: 'Chinese (zn-zh)',
+                value: 'zn-zh',
             },
         ],
     },

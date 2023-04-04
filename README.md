@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
 }
 ```
 
-The dynamic app-config.json can look something like this. This can be combined with standalone language files to create new translations without having to recompile the code and make a new release.
+The dynamic app-config.json can look something like this. This can be combined with standalone language files to create new translations without having to recompile the code and make a new release. Check out my other example [github.com/qulle/angular-localization](https://github.com/qulle/angular-localization) on how to load JSON files to switch between languages without reloading the application.
 ```json
 {
     "meta": {
@@ -49,16 +49,21 @@ The dynamic app-config.json can look something like this. This can be combined w
         "date": "2023-04-01 12:00:00",
         "author": "Qulle"
     },
-    "localization": {
-        "default": "en-us",
-        "options": [
+    "locale": {
+        "default": "sv-se",
+        "selected": "en-us",
+        "supported": [
             {
-                "name": "English",
-                "key": "en-us"
+                "key": "English (en-us)",
+                "value": "en-us"
             },
             {
-                "name": "Swedish",
-                "key": "sv-se"
+                "key": "Swedish (sv-se)",
+                "value": "sv-se"
+            },
+            {
+                "key": "Chinese (zn-zh)",
+                "value": "zn-zh"
             }
         ]
     },
